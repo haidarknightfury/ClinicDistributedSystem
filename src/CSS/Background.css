@@ -1,0 +1,49 @@
+#pane{
+    -fx-background-image: url("doctorBackground.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.root {
+    -fx-background-image: url("/Assets/doctorBackground.jpg");
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.button {    
+    -fx-opacity: 0.7;
+    -custom-solid-button-color: lightgreen;
+    -custom-translucent-button-color: rgba(00, 80, 00, 0.75);
+    -custom-button-color:  linear-gradient(to bottom,
+            -custom-solid-button-color 0%,
+            -custom-solid-button-color 64%,
+            -custom-translucent-button-color 65%);
+
+    -fx-background-color: -custom-button-color;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-text-fill: whitesmoke;
+
+    -fx-padding: 3.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 3, 3);
+}
+
+
+.button:hover {
+    -custom-solid-button-color: derive(lightgreen, 20%);
+    -fx-effect: dropshadow(gaussian, goldenrod, 10, 0, 3, 3);
+}
+
+.button:armed {
+    -custom-solid-button-color: derive(lightgreen, -10%);
+    -fx-effect: null;
+    -fx-background-insets: 2 2 0 0;
+}
+
+
+
